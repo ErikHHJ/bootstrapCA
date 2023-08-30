@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./script.js" defer></script>
+    <script src="https://kit.fontawesome.com/86fb0fb587.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark-subtle">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./index.html">Home</a></li>
+                    <li><a class="dropdown-item" href="./landing.html">Landing</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 border-black" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+<div class="container d-flex flex-column min-vh-100">
+    <div class="row">
+           
+        <button type="button" class="btn btn-success w-25 mx-3 my-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Create New Post <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+  
+        
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">New post</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-outline mb-4">
+                            <label for="title" class="form-label">Title:
+                            <input type="text" class="form-control" placeholder="Enter post title" name="title" required>
+                            
+                        </div>
+                        <div class="form-outline mb-4">
+                            <label for="title" class="form-label">Text:
+                                <textarea class="form-control" rows="5" cols="30" id="title">
+                                </textarea>
+                            
+                        </div>
+                    
+                        <div>
+                        <div class="mb-4 d-flex flex-column">
+                            <label class="form-label" for="modalimg">Upload image:</label>
+                            <img src="https://mdbootstrap.com/img/Photos/Others/placeholder.jpg"
+                            alt="example placeholder" style="width: 300px;" id="modalimg" />
+                        </div>
+                        <div>
+                        <div class="btn btn-primary btn-rounded">
+                         <label class="form-label text-white m-1" for="customFile1">Choose file</label>
+                         <input type="file" class="form-control d-none" id="customFile1" />
+        </div>
+    </div>
+</div>
+
+                    </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+    </div>
+  </div>
+  
+  </div>
+        </div>
+        <div class="row">
+        <div class="col-lg-5 col-10 mx-3 feedcard my-2 d-flex justify-content-center align-items-center">
+                <img class="card-img-top object-fit-fill" src="./images/CharizardCard.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+        </div>
+        <div class="col-lg-5 col-10  mx-3 feedcard my-2 d-flex justify-content-center align-items-center">
+                <img class="card-img object-fit-fill" src="./images/MewtwoCard.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+        </div>   
+    </div> 
+    <div class="row">
+        <div class="col-lg-5 col-10 mx-3 feedcard my-2 d-flex justify-content-center align-items-center">
+                <img class="card-img-top object-fit-fill" src="./images/ScizorCard.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+        </div>
+        <div class="col-lg-5 col-10 mx-3 feedcard my-2 d-flex justify-content-center align-items-center">
+                <img class="card-img-top object-fit-fill" src="./images/SteelixCard.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+        </div>
+        
+    </div>
+    </div>
+
+    
+    
+
+</div>
+</body>
+</html>

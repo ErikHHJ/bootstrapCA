@@ -1,3 +1,4 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 .wrong .fa-check
 {
     display: none;
@@ -10,4 +11,13 @@
 .valid-feedback,
 .invalid-feedback {
   margin-left: calc(2em + 0.25rem + 1.5rem);
+}
+.feedcard {
+    @extend .card;
+    height: auto;
+    img {
+        height: 300px;
+        width: 300px;
+        padding: 20px;
+    }
 }
