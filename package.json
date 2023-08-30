@@ -1,0 +1,16 @@
+{
+  "name": "bootstrapca",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000b\u0000o\u0000o\u0000t\u0000s\u0000t\u0000r\u0000a\u0000p\u0000C\u0000A\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass src/scss:dist/css",
+    "dev": "sass --watch src/scss:dist/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "sass": "^1.66.1"
+  }
+}
