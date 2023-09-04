@@ -1,3 +1,4 @@
+
 addEventListener("DOMContentLoaded", (event) => {
     const password = document.getElementById("password-input");
     const passwordAlert = document.getElementById("password-alert");
@@ -106,3 +107,6 @@ addEventListener("DOMContentLoaded", (event) => {
         passwordAlert.classList.add("d-none");
     });
 });
+
+
+

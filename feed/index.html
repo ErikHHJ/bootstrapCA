@@ -7,46 +7,38 @@
     <link rel="stylesheet" href="../dist/css/main.css">
     <script src="../dist/popper.min.js"></script>
     <script src="../dist/bootstrap.min.js"></script>
-    <script src="../script.js" defer></script>
+    <script src="./feed.js" defer></script>
     <script src="https://kit.fontawesome.com/86fb0fb587.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark-subtle">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../profile/">Profile</a></li>
-                  <li><a class="dropdown-item" href="./index.html">Feed</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="../index.html">Quick Logout</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark-subtle">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">PokeForum</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../profile/index.html">Profile</a></li>
+                <li><a class="dropdown-item" href="./index.html">Feed</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="../index.html">Quick Logout</a></li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2 border-black" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+          </li>
+          
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 border-black" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 <div class="container d-flex flex-column min-vh-100">
     <div class="row">
          <div class="d-flex justify-content-between">
@@ -116,7 +108,7 @@
                   <p class="card-text">Charizard, a majestic Fire/Flying-type Pokémon, is the final evolution of Charmander. With its flaming breath and formidable wings, Charizard can unleash devastating fire attacks from the sky. It is known for its fierce and independent nature, making it a symbol of strength and courage among trainers and fans alike.</p>
                   <a href="#" class="btn btn-primary">To profile</a>
                   <div class="d-flex gap-2 my-2">
-                    <button class="btn btn-primary"><i class="fa-regular fa-heart"></i> Like</button>
+                    <button class="like btn btn-primary"><i class="fa-regular fa-heart"></i> Like</button>
                     <button class="btn btn-primary"><i class="fa-regular fa-comment"></i> Comment</button>
                     <button class="btn btn-primary"><i class="fa-solid fa-share"></i> Share</button>
                   </div>
@@ -131,7 +123,7 @@
                   <p class="card-text">Mewtwo is a legendary Psychic-type Pokémon, created through genetic manipulation. With an imposing presence and unmatched psychic abilities, it stands as one of the most formidable beings in the Pokémon world. Mewtwo's incredible intellect and raw power make it a sought-after asset in battles, making it an iconic and enigmatic character.</p>
                   <a href="#" class="btn btn-primary">To profile:</a>
                   <div class="d-flex gap-2 my-2">
-                    <button class="btn btn-primary"><i class="fa-regular fa-heart"></i> Like</button>
+                    <button class="like btn btn-primary"><i class="fa-regular fa-heart"></i> Like</button>
                     <button class="btn btn-primary"><i class="fa-regular fa-comment"></i> Comment</button>
                     <button class="btn btn-primary"><i class="fa-solid fa-share"></i> Share</button>
                   </div>
@@ -148,7 +140,7 @@
                   <p class="card-text">Scizor, a dual-type Bug/Steel Pokémon, evolves from Scyther when traded holding a Metal Coat. Known for its sleek and swift appearance, Scizor boasts razor-sharp claws that it wields with precision in battle. Its combination of speed and cutting-edge attacks makes it a formidable opponent, earning it a place among Pokémon trainers' top choices.</p>
                   <a href="#" class="btn btn-primary">To profile:</a>
                   <div class="d-flex gap-2 my-2">
-                    <button class="btn btn-primary"><i class="fa-regular fa-heart"></i> Like</button>
+                    <button class="like btn btn-primary"><i class="fa-regular fa-heart"></i> Like</button>
                     <button class="btn btn-primary"><i class="fa-regular fa-comment"></i> Comment</button>
                     <button class="btn btn-primary"><i class="fa-solid fa-share"></i> Share</button>
                   </div>
@@ -163,7 +155,7 @@
                   <p class="card-text">Steelix is a formidable Steel/Ground-type Pokémon, evolved from Onix when traded while holding a Metal Coat. Its colossal, serpentine body is forged from solid steel, granting it impressive defensive capabilities. Steelix can burrow through the earth with ease, creating tunnels as it travels. Its intimidating presence and ironclad defenses make it a formidable opponent in battles.</p>
                   <a href="#" class="btn btn-primary">To profile:</a>
                   <div class="d-flex gap-2 my-2">
-                    <button class="btn btn-primary"><i class="fa-regular fa-heart"></i> Like</button>
+                    <button class="like btn btn-primary"><i class="fa-regular fa-heart"></i> Like</button>
                     <button class="btn btn-primary"><i class="fa-regular fa-comment"></i> Comment</button>
                     <button class="btn btn-primary"><i class="fa-solid fa-share"></i> Share</button>
                   </div>
