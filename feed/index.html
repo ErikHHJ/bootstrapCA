@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Feed</title>
     <link rel="stylesheet" href="../dist/css/main.css">
     <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -30,10 +30,10 @@
                   Dropdown
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./index.html">Home</a></li>
-                    <li><a class="dropdown-item" href="./landing.html">Landing</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="../profile/">Profile</a></li>
+                  <li><a class="dropdown-item" href="./index.html">Feed</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="../index.html">Quick Logout</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -49,10 +49,17 @@
       </nav>
 <div class="container d-flex flex-column min-vh-100">
     <div class="row">
-           
-        <button type="button" class="btn btn-success w-25 mx-5 my-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+         <div class="d-flex justify-content-between">
+        <button type="button" class="newpost  btn btn-success w-25 mx-5 my-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         Create New Post <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </button>
+        <button class="sortbuttons btn btn-outline-success">Newest</button>
+        <button class="sortbuttons btn btn-outline-success">Popularity</button>
+        <button class="sortbuttons btn btn-outline-success">Trending</button>
+        <label class="searchlabel" for="search">Search posts:</label>
+        <input type="text" class="searchbar border-success form-control" id="search">
+      </div> 
+
   
         
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -101,37 +108,65 @@
         </div>
         <div class="row">
         <div class="col-lg-5 col-10 mx-auto feedcard my-2 d-flex justify-content-center align-items-center">
+                <h2 class="user">Published by coolGuy79</h2>
+                <p class="fw-lighter">1 min ago</p>
                 <img class="card-img-top object-fit-fill" src="../images/CharizardCard.png" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">Charizard</h5>
+                  <p class="card-text">Charizard, a majestic Fire/Flying-type Pokémon, is the final evolution of Charmander. With its flaming breath and formidable wings, Charizard can unleash devastating fire attacks from the sky. It is known for its fierce and independent nature, making it a symbol of strength and courage among trainers and fans alike.</p>
+                  <a href="#" class="btn btn-primary">To profile</a>
+                  <div class="d-flex gap-2 my-2">
+                    <button class="btn btn-primary"><i class="fa-regular fa-heart"></i> Like</button>
+                    <button class="btn btn-primary"><i class="fa-regular fa-comment"></i> Comment</button>
+                    <button class="btn btn-primary"><i class="fa-solid fa-share"></i> Share</button>
+                  </div>
               </div>
         </div>
         <div class="col-lg-5 col-10  mx-auto feedcard my-2 d-flex justify-content-center align-items-center">
+                <h2 class="user">Published by pokemonlover34</h2>
+                <p class="fw-lighter">2 min ago</p>
                 <img class="card-img object-fit-fill" src="../images/MewtwoCard.png" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">MewTwo</h5>
+                  <p class="card-text">Mewtwo is a legendary Psychic-type Pokémon, created through genetic manipulation. With an imposing presence and unmatched psychic abilities, it stands as one of the most formidable beings in the Pokémon world. Mewtwo's incredible intellect and raw power make it a sought-after asset in battles, making it an iconic and enigmatic character.</p>
+                  <a href="#" class="btn btn-primary">To profile:</a>
+                  <div class="d-flex gap-2 my-2">
+                    <button class="btn btn-primary"><i class="fa-regular fa-heart"></i> Like</button>
+                    <button class="btn btn-primary"><i class="fa-regular fa-comment"></i> Comment</button>
+                    <button class="btn btn-primary"><i class="fa-solid fa-share"></i> Share</button>
+                  </div>
               </div>
         </div>   
     </div> 
     <div class="row">
         <div class="col-lg-5 col-10 mx-auto feedcard my-2 d-flex justify-content-center align-items-center">
+                <h2 class="user">Published by Caplix</h2>
+                <p class="fw-lighter">3 min ago</p>
                 <img class="card-img-top object-fit-fill" src="../images/ScizorCard.png" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">Scizor</h5>
+                  <p class="card-text">Scizor, a dual-type Bug/Steel Pokémon, evolves from Scyther when traded holding a Metal Coat. Known for its sleek and swift appearance, Scizor boasts razor-sharp claws that it wields with precision in battle. Its combination of speed and cutting-edge attacks makes it a formidable opponent, earning it a place among Pokémon trainers' top choices.</p>
+                  <a href="#" class="btn btn-primary">To profile:</a>
+                  <div class="d-flex gap-2 my-2">
+                    <button class="btn btn-primary"><i class="fa-regular fa-heart"></i> Like</button>
+                    <button class="btn btn-primary"><i class="fa-regular fa-comment"></i> Comment</button>
+                    <button class="btn btn-primary"><i class="fa-solid fa-share"></i> Share</button>
+                  </div>
               </div>
         </div>
         <div class="col-lg-5 col-10 mx-auto feedcard my-2 d-flex justify-content-center align-items-center">
+          <h2 class="user">Published by RyanGozling</h2>
+          <p class="fw-lighter">4 min ago</p>
                 <img class="card-img-top object-fit-fill" src="../images/SteelixCard.png" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">Steelix</h5>
+                  <p class="card-text">Steelix is a formidable Steel/Ground-type Pokémon, evolved from Onix when traded while holding a Metal Coat. Its colossal, serpentine body is forged from solid steel, granting it impressive defensive capabilities. Steelix can burrow through the earth with ease, creating tunnels as it travels. Its intimidating presence and ironclad defenses make it a formidable opponent in battles.</p>
+                  <a href="#" class="btn btn-primary">To profile:</a>
+                  <div class="d-flex gap-2 my-2">
+                    <button class="btn btn-primary"><i class="fa-regular fa-heart"></i> Like</button>
+                    <button class="btn btn-primary"><i class="fa-regular fa-comment"></i> Comment</button>
+                    <button class="btn btn-primary"><i class="fa-solid fa-share"></i> Share</button>
+                  </div>
               </div>
         </div>
         

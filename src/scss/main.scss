@@ -1,4 +1,7 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+// Login -----------------------------------------------
+
 .wrong .fa-check
 {
     display: none;
@@ -12,6 +15,9 @@
 .invalid-feedback {
   margin-left: calc(2em + 0.25rem + 1.5rem);
 }
+
+// Feed ----------------------------------------------
+
 .feedcard {
     @extend .card;
     height: auto;
@@ -21,3 +27,28 @@
         padding: 20px;
     }
 }
+.searchbar{
+    width: 300px;
+    height: 40px;
+}
+.newpost {
+    font-size: 10px;
+}
+.sortbuttons{
+    font-size: 10px;
+}
+@include media-breakpoint-down (md){
+    .newpost{
+        margin: 0 !important;
+    }
+    .searchbar {
+        display: none;
+    }
+    
+    .searchlabel {
+        display: none;
+    }
+}
+
+// Profile --------------------
+
